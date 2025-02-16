@@ -77,19 +77,38 @@ PlantMark 是一个 CAD 面积标注工具，用于计算和标注 CAD 图纸中
 
 ## 代码结构图
 PlantMark/
-├── main.py # 程序入口文件
-├── assets/ # 资源文件目录
-│ ├── icon.py # 程序图标数据
-│ ├── qr_codes.py # 收款码数据
-│ └── convert_icon.py # 图标转换工具
-├── ui/ # 用户界面相关模块
-│ ├── plant_mark_ui.py # 主界面实现
-│ ├── ui_components.py # UI组件
-│ ├── window_manager.py # 窗口管理
-│ └── export_manager.py # 导出功能管理
-├── cad/ # CAD相关模块
-│ ├── plant_mark.py # CAD操作核心功能
-│ └── cad_detector.py # CAD软件检测模块
-├── utils/ # 工具模块
-│ └── settings_manager.py # 设置管理
-└── README.md # 项目说明文档
+├── main.py        # 程序入口文件
+├── assets/        # 资源文件目录
+│   ├── icon.py    # 程序图标数据
+│   └── qr_codes.py # 收款码数据
+├── convert_icon.py # 图标转换工具
+├── ui/            # 用户界面相关模块
+│   ├── plant_mark_ui.py # 主界面实现
+│   ├── ui_components.py # UI组件
+│   └── window_manager.py # 窗口管理
+├── export_manager.py # 导出功能管理
+├── cad/           # CAD相关模块
+│   ├── plant_mark.py # CAD操作核心功能
+│   └── cad_detector.py # CAD软件检测模块
+├── utils/         # 工具模块
+│   └── settings_manager.py # 设置管理
+└── README.md      # 项目说明文档
+
+这个代码结构图展示了PlantMark项目的文件和目录结构，方便开发者和用户快速了解项目的组成和功能。
+PlantMark/: 项目根目录。
+main.py: 程序的入口文件，运行此文件即可启动PlantMark。
+assets/: 存放项目所需的各种资源文件，如图标、收款码等。
+icon.py: 存储程序图标的数据。
+qr_codes.py: 存储收款码相关数据。
+convert_icon.py: 一个实用工具，用于转换图标文件的格式。
+ui/: 包含用户界面相关的模块。
+plant_mark_ui.py: 实现程序的主界面。
+ui_components.py: 封装各种UI组件，方便界面开发。
+window_manager.py: 管理程序窗口的创建、显示和销毁等操作。
+export_manager.py: 负责导出PlantMark生成的数据或结果。
+cad/: 与CAD软件交互相关的模块。
+plant_mark.py: 实现与CAD软件进行交互的核心功能。
+cad_detector.py: 用于检测计算机上是否安装了特定的CAD软件。
+utils/: 存放一些通用的工具模块。
+settings_manager.py: 管理PlantMark的各项设置，如保存、加载配置等。
+README.md: 项目的说明文档，包含项目介绍、使用方法、代码结构说明等。
